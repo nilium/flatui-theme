@@ -37,6 +37,7 @@ To configure Sublime Text to use the theme, follow the instructions below for yo
 
 * Open your User Settings Preferences file `Sublime Text 2 -> Preferences -> Settings - User`
 * Add (or update) your theme entry to be `"theme": "FlatUI.sublime-theme"`
+* RESTART Sublime Text 2
 
 **Example Sublime Text 2 User Settings**
 
@@ -48,6 +49,7 @@ To configure Sublime Text to use the theme, follow the instructions below for yo
 
 * Open your User Settings Preferences file `Sublime Text -> Preferences -> Settings - User`
 * Add (or update) your theme entry to be `"theme": "FlatUI 3.sublime-theme"`
+* RESTART Sublime Text 3
 
 **Example Sublime Text 3 User Settings**
 
