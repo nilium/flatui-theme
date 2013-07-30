@@ -4,9 +4,13 @@ Flat UI theme for Sublime Text 2 and Sublime Text 3.
 
 Project site: Coming soon.
 
+## Design
+
+![FlatUI Theme](http://f.cl.ly/items/2J2A2i1g3o0i2l3l0a0A/Screen%20Shot%202013-07-30%20at%201.56.04%20PM.png)
+
 ## Installation
 
-The FlatUI is designed to work with the latest development builds of Sublime Text, including [Sublime Text 2](http://www.sublimetext.com/dev) and [Sublime Text 3](http://www.sublimetext.com/3dev).
+FlatUI theme is designed to work with the latest development builds of Sublime Text, including [Sublime Text 2](http://www.sublimetext.com/dev) and [Sublime Text 3](http://www.sublimetext.com/3dev).
 
 ### Using Git
 
