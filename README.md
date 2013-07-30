@@ -76,6 +76,8 @@ Sublime Text provides an elegant way to tweak existing themes without having to 
 
 ## Bonus Options
 
+
+
 ### Syntax Highlighting Color Schemes
 
 The FlatUI theme uses a custom syntax highlighting color scheme.
@@ -85,6 +87,13 @@ If you'd like to use the syntax highlighting schemes:
 * Locate the `tmtheme` file in `Packages/Theme - FlatUI/Color Schemes/`
 * Copy and paste the `tmtheme` file in the Sublime Text `Packages/User` folder
 * Enable the colour scheme via `Preferences -> Color Scheme -> User`
+
+### Use thinner tabs
+In your User Settings file, add the following line `"flatui_thin_tabs": true,`
+
+### Use sidebar folder icons 
+
+In your User Settings file, add the following line `"flatui_folder_icons": true,`
 
 ## Development
 
