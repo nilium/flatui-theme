@@ -84,9 +84,7 @@ The FlatUI theme uses a custom syntax highlighting color scheme.
 
 If you'd like to use the syntax highlighting schemes: 
 
-* Locate the `tmtheme` file in `Packages/Theme - FlatUI/Color Schemes/`
-* Copy and paste the `tmtheme` file in the Sublime Text `Packages/User` folder
-* Enable the colour scheme via `Preferences -> Color Scheme -> User`
+* Enable the colour scheme via `Preferences -> Color Scheme -> Theme - FlatUI -> FlatUI`
 
 ### Use thinner tabs
 In your User Settings file, add the following line `"flatui_thin_tabs": true,`
