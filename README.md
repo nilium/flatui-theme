@@ -72,11 +72,11 @@ Sublime Text provides an elegant way to tweak existing themes without having to 
 
 ## Bonus Options
 
-### Syntax Highlighting Colour Schemes
+### Syntax Highlighting Color Schemes
 
-The Soda Light screenshot uses a modified version of Espresso Tutti Colori and the Soda Dark screenshot uses a modified version of Monokai.
+The FlatUI theme uses a custom syntax highlighting color scheme.
 
-If you'd like to use the syntax highlighting schemes shown in the screenshots: 
+If you'd like to use the syntax highlighting schemes: 
 
 * Locate the `tmtheme` file in `Packages/Theme - FlatUI/Color Schemes/`
 * Copy and paste the `tmtheme` file in the Sublime Text `Packages/User` folder
