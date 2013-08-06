@@ -7,7 +7,8 @@
     // Tab set
     {
         "class": "tabset_control",
-        "layer0.tint": [56, 124, 191],
+        //"layer0.tint": [56, 124, 191],
+        "layer0.tint": [70, 143, 211],
         "layer0.inner_margin": [1, 7],
         "layer0.opacity": 1.0,
         "content_margin": [0, 0, 0, 0],
@@ -321,7 +322,7 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [25, 25, 25],
+        "layer0.tint": [37, 48, 56],
         "layer0.opacity": 1.0
     },
 
@@ -331,8 +332,8 @@
 
     {
         "class": "grid_layout_control",
-        "border_size": 1,
-        "border_color": [70, 70, 70]
+        "border_size": 2,
+        "border_color": [56, 124, 191]
     },
 
 //
@@ -427,7 +428,7 @@
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 3],
+        "row_padding": [8, 5],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false,

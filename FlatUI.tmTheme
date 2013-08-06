@@ -10,25 +10,27 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#253038</string>
+                <string>#222c34</string>
                 <key>caret</key>
-                <string>#8cc8ec</string>
+                <string>#f3f2f4</string>
                 <key>foreground</key>
-                <string>#8cc8ec</string>
+                <string>#92cef1</string>
                 <key>invisibles</key>
                 <string>#3B3A32</string>
                 <key>lineHighlight</key>
-                <string>#2f3e4a</string>
+                <string>#2b3d49</string>
                 <key>selection</key>
-                <string>#2f3e4a</string>
+                <string>#364958</string>
+                <key>selectionBorder</key>
+                <string>#3d5263</string>
                 <key>findHighlight</key>
                 <string>#73ed77</string>
                 <key>findHighlightForeground</key>
                 <string>#1a2329</string>
-                <key>selectionBorder</key>
-                <string>#2f3e4a</string>
-                <key>gutterBackground</key>
-                <string>#000000</string>
+                <key>gutter</key>
+                <string>#182228</string>
+                <key>gutterForeground</key>
+                <string>#4e5f6b</string>
             </dict>
         </dict>
         <dict>
@@ -344,6 +346,28 @@
             <dict>
                 <key>foreground</key>
                 <string>#f4cf77</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>♦ Embedded Source (Bright)</string>
+            <key>scope</key>
+            <string>text.html.ruby source</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#0B0B0B</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>♦ Embedded Source</string>
+            <key>scope</key>
+            <string>text source</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#00000025</string>
             </dict>
         </dict>
     </array>
