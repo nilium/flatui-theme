@@ -1,16 +1,14 @@
 # FlatUI Theme
 
-Flat UI theme for Sublime Text 2 and Sublime Text 3.
-
-Project site: Coming soon.
+Flat UI theme for Sublime Text 2 and Sublime Text 3, plus personal tweaks by Nilium that are in no way endorsed by the original author.
 
 ## Design
 
-![FlatUI Theme](http://f.cl.ly/items/2J2A2i1g3o0i2l3l0a0A/Screen%20Shot%202013-07-30%20at%201.56.04%20PM.png)
+![FlatUI Theme](http://spifftastic.net/junk/flatui_screenshot.png)
 
 ## Installation
 
-FlatUI theme is designed to work with the latest development builds of Sublime Text, including [Sublime Text 2](http://www.sublimetext.com/dev) and [Sublime Text 3](http://www.sublimetext.com/3dev).
+FlatUI theme is designed to work with the latest development builds of Sublime Text, including [Sublime Text 2](http://www.sublimetext.com/dev) and [Sublime Text 3](http://www.sublimetext.com/3dev). The tweaks by Nilium are only available for the Sublime Text 2 version of the theme.
 
 ### Using Git
 
@@ -20,7 +18,7 @@ You can locate your Sublime Text `Packages` directory by using the menu item `Pr
 
 While inside the `Packages` directory, clone the theme repository using the command below:
 
-    git clone https://github.com/acondiff/flatui-theme/ "Theme - FlatUI"
+    git clone https://github.com/nilium/flatui-theme/ "Theme - FlatUI"
 
 ### Download Manually
 
