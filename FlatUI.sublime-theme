@@ -8,7 +8,7 @@
     {
         "class": "tabset_control",
         //"layer0.tint": [56, 124, 191],
-        "layer0.tint": [70, 143, 211],
+        "layer0.tint": [40, 123, 180],
         "layer0.inner_margin": [1, 7],
         "layer0.opacity": 1.0,
         "content_margin": [0, 0, 0, 0],
@@ -30,8 +30,8 @@
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [5, 5],     
-        "layer0.tint": [70, 143, 211]
+        "layer0.inner_margin": [5, 5],
+        "layer0.tint": [60, 143, 210]
     },
     // Tab close state
     {
@@ -43,14 +43,20 @@
     {
         "class": "tab_control",
         "attributes": ["hover"],
-        "layer0.tint": [86, 154, 223]
+        "layer0.tint": [96, 164, 253]
     },
     // Tab active state
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer0.tint": [49, 114, 181]
-        
+        "layer0.tint": [240, 240, 240]
+    },
+    // Tab active state
+    {
+        "class": "tab_control",
+        "settings": ["highlight_modified_tabs"],
+        "attributes": ["selected", "dirty"],
+        "layer0.tint": [255, 230, 230]
     },
     // Tab dirty state (close button hidden)
     {
@@ -76,14 +82,15 @@
 //
 // TAB BUTTONS
 //
-    
+
     // Tab close button
     {
         "class": "tab_close_button",
         "content_margin": [0, 0],
         "layer0.texture": "Theme - FlatUI/FlatUI/tab-close-inactive.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0
+        "layer0.inner_margin": 0,
+        "layer0.tint": [255, 255, 255]
     },
     {
         "class": "tab_close_button",
@@ -100,6 +107,26 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         "layer0.texture": "Theme - FlatUI/FlatUI/tab-close.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [128, 128, 128]
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+        "layer0.texture": "Theme - FlatUI/FlatUI/tab-close.png",
+        "layer0.opacity": 1.0,
+        "layer0.tint": [255, 128, 32]
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["hover", "selected"]}],
+        "layer0.tint": [64, 120, 255],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["hover", "selected", "dirty"]}],
+        "layer0.tint": [255, 128, 32],
         "layer0.opacity": 1.0
     },
     // Tab dirty button
@@ -129,7 +156,7 @@
         "class": "tab_close_button",
         "settings": ["highlight_modified_tabs"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - FlatUI/FlatUI/tab-highlight-inactive.png"
+        "layer0.texture": "Theme - FlatUI/FlatUI/file-dirty-selected.png"
     },
     {
         "class": "tab_close_button",
@@ -155,25 +182,36 @@
 //
 // TAB LABELS
 //
-    
+
     {
         "class": "tab_label",
         "fade": true,
         "fg": [255, 255, 255],
+        "font.bold": false,
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [255, 255, 255],
-        "shadow_color": [255, 255, 255]
+        "fg": [255, 255, 255]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [255, 255, 255],
-        "shadow_color": [255, 255, 255]
+        "fg": [68, 68, 68]
+    },
+    {
+        "class": "tab_label",
+        "settings": ["highlight_modified_tabs"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "fg": [255, 255, 255]
+    },
+    {
+        "class": "tab_label",
+        "settings": ["highlight_modified_tabs"],
+        "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+        "fg": [255, 100, 68]
     },
 
 
@@ -342,7 +380,7 @@
 
     {
         "class": "minimap_control",
-        "viewport_color": [255, 255, 255, 35]
+        "viewport_color": [128, 128, 128, 35]
     },
 
 //
@@ -394,7 +432,7 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.tint": [70, 143, 211],
+        "layer0.tint": [60, 143, 210],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
         "content_margin": [8, 4, 8, 4]
@@ -420,24 +458,27 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.tint": [243, 242, 244],
+        "layer0.tint": [60, 143, 210],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [1, 1, 2, 1],
-        "content_margin": [0, 2, 0, 0]
+        "content_margin": [0, 0, 2, 0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
+        "content_margin": [0, 200, 0, 0],
         "row_padding": [8, 5],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false,
-        "dark_content": true
+        "dark_content": false,
+        "layer0.opacity": 1.0,
+        "layer0.tint": [243, 242, 244]
     },
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.tint": [70, 143, 211],
+        "layer0.tint": [60, 143, 210],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
@@ -512,12 +553,14 @@
         "class": "close_button",
         "layer0.texture": "Theme - FlatUI/FlatUI/file-close.png",
         "layer0.opacity": 0.0,
+        "layer0.tint": [255, 255, 255],
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.tint": [255, 255, 255],
         "layer0.opacity": 1.0
     },
     // Sidebar file dirty
@@ -525,6 +568,7 @@
         "class": "close_button",
         "attributes": ["dirty"],
         "layer0.texture": "Theme - FlatUI/FlatUI/file-dirty.png",
+        "layer0.tint": [255, 255, 255],
         "layer0.opacity": 1.0
     },
     {
@@ -671,7 +715,7 @@
     // Bottom panel background
     {
         "class": "panel_control",
-        "layer0.tint": [182, 191, 199],
+        "layer0.tint": [222, 231, 239],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0,
         "content_margin": [2, 3, 2, 1]
@@ -706,7 +750,7 @@
         "row_padding": [5, 2],
         "layer0.tint": [33, 33, 33],
         "layer0.opacity": 1.0,
-        "dark_content": true
+        "dark_content": false
     },
     {
         "class": "quick_panel_row",
