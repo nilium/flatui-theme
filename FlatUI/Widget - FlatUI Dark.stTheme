@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>author</key>
+  <string>Ian Hill</string>
+  <key>comment</key>
+  <string>A widget theme for the UI components of the Soda Dark theme.</string>
+  <key>name</key>
+  <string>Flat UI Dark - Widget Theme</string>
+  <key>settings</key>
+  <array>
+    <dict>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#212326</string>
+        <key>caret</key>
+        <string>#FFFFFF</string>
+        <key>foreground</key>
+        <string>#d2cfc6</string>
+        <key>invisibles</key>
+        <string>#404040</string>
+        <key>selection</key>
+        <string>#793695</string>
+        <key>selectionBorder</key>
+        <string>#ba44e7</string>
+        <key>inactiveSelection</key>
+        <string>#b77ac6</string>
+      </dict>
+    </dict>
+  </array>
+</dict>
+</plist>
